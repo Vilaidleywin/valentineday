@@ -55,15 +55,34 @@
 }
 
 /* garis margin kiri ala buku */
+.notebook-page {
+  position: relative;
+  background-color: #fffdf8;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.06) 1px,
+    transparent 1px
+  );
+  background-size: 100% 34px; /* jarak garis, kerasa buku */
+}
+
 .notebook-page::before {
   content: "";
   position: absolute;
-  left: 56px;
+  left: 36px; /* mobile */
   top: 0;
   bottom: 0;
   width: 2px;
   background: rgba(236, 72, 153, 0.28);
 }
-.notebook-page::before {
-  left: 72px; /* sebelumnya 56px */
+
+@media (min-width: 640px) {
+  .notebook-page::before {
+    left: 44px; /* sm */
+  }
+}
+@media (min-width: 768px) {
+  .notebook-page::before {
+    left: 52px; /* md */
+  }
 }
