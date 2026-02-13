@@ -70,12 +70,22 @@ export default function LetterPage({ onNext, onBack }) {
 
               {step >= 3 && (
                 <Typewriter2
+                  text="I'm blessed to have you by my side. Thank you for everything."
+                  speed={18}
+                  startDelay={120}
+                  className="block"
+                  onDone={() => setStep(4)}
+                />
+              )}
+
+              {step >= 4 && (
+                <Typewriter2
                   text={"Always yours,\n— Pitoo"}
                   speed={20}
                   startDelay={120}
                   className="block whitespace-pre-line font-semibold text-primary"
                   cursor={false}
-                  onDone={() => setStep(4)}
+                  onDone={() => setStep(5)}
                 />
               )}
             </div>
