@@ -70,7 +70,7 @@ export default function LetterPage({ onNext, onBack }) {
 
               {step >= 3 && (
                 <Typewriter2
-                  text={"Always yours,\n— Me"}
+                  text={"Always yours,\n— Pitoo"}
                   speed={20}
                   startDelay={120}
                   className="block whitespace-pre-line font-semibold text-primary"

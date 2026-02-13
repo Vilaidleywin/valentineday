@@ -1228,7 +1228,11 @@ body {
       </div>
 
       {/* tombol balik */}
-      <div className="absolute bottom-8 w-full flex justify-center z-50">
+      {/* tombol balik */}
+      <div
+        className="fixed inset-x-0 z-50 flex justify-center"
+        style={{ top: "max(550px, env(safe-area-inset-top))" }}
+      >
         <PrimaryButton onClick={onReset}>Back to Start</PrimaryButton>
       </div>
     </div>
